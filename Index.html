@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bienvenida, mi amor</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      background: linear-gradient(to top right, #ffe6f0, #ffc4d6);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Segoe UI', sans-serif;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    .container {
+      max-width: 800px;
+      padding: 30px;
+      background: white;
+      border-radius: 25px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      animation: fadeIn 2s ease forwards;
+      opacity: 0;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      color: #e91e63;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1.2em;
+      color: #555;
+      margin-bottom: 40px;
+    }
+
+    .heart-button {
+      font-size: 2em;
+      background-color: #ff4d6d;
+      color: white;
+      border: none;
+      border-radius: 50%;
+      padding: 20px 25px;
+      text-decoration: none;
+      display: inline-block;
+      animation: heartbeat 1s infinite;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .heart-button:hover {
+      background-color: #e91e63;
+    }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+      }
+    }
+
+    @keyframes heartbeat {
+      0%, 100% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.2);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Bienvenida, mi amor 🌹</h1>
+    <p>
+      Esta página fue creada con todo mi corazón,  
+      para ti, la persona más especial de mi vida.  
+      Cada palabra, cada detalle... está hecho con amor.
+    </p>
+    <a href="AMOR.html" class="heart-button">❤️</a>
+  </div>
+</body>
+</html>
+

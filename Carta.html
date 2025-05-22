@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carta de Amor</title>
+  <style>
+   body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to top right, #ffdde1, #fbb1bd);
+  font-family: 'Georgia', serif;
+  color: #4a4a4a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  position: relative;
+  overflow-y: auto; /* ✅ Cambio hecho aquí */
+}
+    /* Decoración floral */
+    .flor {
+      position: absolute;
+      width: 80px;
+      opacity: 0.15;
+      animation: flotar 10s infinite ease-in-out alternate;
+    }
+
+    .flor.top-left {
+      top: 20px;
+      left: 20px;
+      transform: rotate(-20deg);
+    }
+
+    .flor.top-right {
+      top: 20px;
+      right: 20px;
+      transform: rotate(20deg);
+    }
+
+    .flor.bottom-left {
+      bottom: 20px;
+      left: 20px;
+      transform: rotate(15deg);
+    }
+
+    .flor.bottom-right {
+      bottom: 20px;
+      right: 20px;
+      transform: rotate(-15deg);
+    }
+
+    @keyframes flotar {
+      0% { transform: translateY(0) rotate(0); }
+      100% { transform: translateY(-10px) rotate(5deg); }
+    }
+
+    .carta {
+      background: #fff;
+      padding: 40px;
+      border-radius: 20px;
+      max-width: 800px;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+      opacity: 0;
+      transform: translateY(50px);
+      animation: aparecer 2s ease forwards;
+      z-index: 10;
+      text-align: justify;
+    }
+
+    h1 {
+      color: #d6336c;
+      text-align: center;
+      margin-bottom: 20px;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    p {
+      font-size: 1.2em;
+      line-height: 1.8;
+      white-space: pre-line;
+    }
+
+    @keyframes aparecer {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .firma {
+      text-align: right;
+      margin-top: 30px;
+      font-style: italic;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+  <!-- Flores decorativas -->
+  <img src="h1.png" alt="flor" class="flor top-left">
+  <img src="h1.png" alt="flor" class="flor top-right">
+  <img src="h1.png" alt="flor" class="flor bottom-left">
+  <img src="h1.png" alt="flor" class="flor bottom-right">
+
+  <!-- Carta -->
+  <div class="carta">
+    <h1>Carta de Amor y Gratitud 💌</h1>
+    <p>
+      Mi amor,
+
+      Hoy quiero abrirte el corazón y dejarte ver todo lo que siento por ti.
+      Eres la razón de mis sonrisas, el refugio en mis días difíciles,
+      la paz que encontré sin buscar.
+
+      Doy gracias a Dios por haberte puesto en mi camino,
+      y a la vida por dejar que nos encontráramos.
+
+      Cada momento contigo es un poema,
+      cada mirada, un suspiro,
+      y cada abrazo, un paraíso.
+
+      No hay palabras suficientes para decirte cuánto te amo,
+      pero esta carta es mi intento de escribir lo que mi alma grita cada día:
+      gracias por existir, por amarme, por quedarte.
+
+      Eres mi amor eterno.
+    </p>
+    <div class="firma">Con todo mi corazón, 💖<br>Robert</div>
+	     <a href="index.html" class="heart-button">❤️</a>
+  </div>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>fotitos</title>
+  <style>
+    body {
+      background: #fff0f5;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      padding: 30px;
+      text-align: center;
+      color: #444;
+    }
+
+    h1 {
+      color: #d81b60;
+      margin-bottom: 20px;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-top: 30px;
+      text-decoration: none;
+      color: #e91e63;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h1>Nuestros Momentos</h1>
+   <div class="gallery">
+    <img src="1.jpeg" alt="Recuerdo 1">
+    <img src="2.jpeg" alt="Recuerdo 2">
+    <img src="5.jpeg" alt="Recuerdo 3">
+    <img src="6.jpeg" alt="Recuerdo 4">
+    <!-- Puedes agregar más imágenes como esta -->
+  </div>
+	<div style="margin-top: 40px;">
+    <a href="Carta.html" class="heart-button">❤️</a>
+  </div>
+</body>
+</html>
